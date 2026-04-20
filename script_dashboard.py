@@ -263,8 +263,7 @@ with tab5:
                 else:
                     st.info("No patterns found.")
 
-        except Exception as e:
-            st.error(f"Rules failed: {e}")    df["at_risk"] = np.where(df["pass_fail"] == "Fail", "Yes", "No")
+        
 
 # =========================
 # FILTERS
