@@ -1,4 +1,10 @@
 
+# Safe import for mlxtend
+try:
+    from mlxtend.frequent_patterns import apriori, association_rules
+    mlxtend_available = True
+except ImportError:
+    mlxtend_available = False
 import warnings
 warnings.filterwarnings("ignore")
 
